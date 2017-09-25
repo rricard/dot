@@ -1,8 +1,39 @@
 #!/usr/bin/ruby
 
 # Homebrew global params and taps
-cask_args appdir: "/Applications"
-tap "caskroom/cask"
+cask_args appdir: '/Applications'
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+
+# MAS apps
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Spark', id: 1176895641
+mas 'Xcode', id: 497799835
+
+# Cask Applications (preferred)
+cask '1password'
+cask 'google-backup-and-sync'
+cask 'calibre'
+cask 'discord'
+cask 'dropbox'
+cask 'expo-xde'
+cask 'firefoxdeveloperedition'
+cask 'gfxcardstatus'
+cask 'google-chrome-dev'
+cask 'hex-fiend'
+cask 'iina'
+cask 'insomnia'
+cask 'iterm2'
+cask 'sketch'
+cask 'spectacle'
+cask 'slack'
+cask 'spotify'
+cask 'the-unarchiver'
+cask 'tower'
+cask 'visual-studio-code'
+cask 'vlc'
 
 # Devtools
 brew 'hub'
