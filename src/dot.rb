@@ -16,6 +16,7 @@ def dot(options)
   DevEnv.yarn_install CFG_PATH, v
   Linker.link_all config['links'], CFG_PATH, v
   unless options[:commit_message].nil?
+    puts "[INFO] Saving the new changes to the repository" if v
     system 'git', 'commit', '-a', '-m', options[:commit_message]
     puts "[DONE] Commited changes with message: #{options[:commit_message]}" if v
     system 'git', 'push', options[:upstream]
