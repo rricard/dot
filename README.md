@@ -9,7 +9,7 @@ Clone it, run the apply script for the first time:
 ```
 git clone https://github.com/rricard/dot.git
 cd dot
-./bin/dot
+./bin/dotapply
 ```
 
 ## Make it yours
@@ -25,13 +25,13 @@ git fork
 Once you changed some things in your config, you can apply them:
 
 ```
-dot
+dotapply
 ```
 
 You can automatically apply, commit and push the config by adding a commit message:
 
 ```
-dot -m YOUR_COMMIT_MESSAGE -u YOUR_GH_USERNAME
+dotapply -m YOUR_COMMIT_MESSAGE -u YOUR_GH_USERNAME
 ```
 
 [rr]: http://rricard.me

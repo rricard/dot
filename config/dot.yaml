@@ -3,3 +3,4 @@ links:
   bash_profile.sh: ~/.bash_profile
   bashrc.sh: ~/.bashrc
   zshrc.sh: ~/.zshrc
+  "../bin/dotapply": /usr/local/bin/dotapply

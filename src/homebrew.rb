@@ -1,6 +1,6 @@
 module Homebrew
   def Homebrew.ensure_installed(verbose = false)
-    if not system 'which', 'brew'
+    if not system 'brew help > /dev/null'
       if verbose
         puts "[INFO] homebrew is not on the system"
       end

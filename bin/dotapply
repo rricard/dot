@@ -9,7 +9,7 @@ options = {
 }
 
 optparser = OptionParser.new do |opts|
-  opts.banner = 'Usage: dot [options]'
+  opts.banner = 'Usage: dotapply [options]'
   opts.on '-v', '--[no-]verbose', 'Enable verbose output' do |v|
     options[:verbose] = v
   end
