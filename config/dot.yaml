@@ -3,6 +3,7 @@ links:
   bash_profile.sh: ~/.bash_profile
   bashrc.sh: ~/.bashrc
   zshrc.sh: ~/.zshrc
+  .gitignore: ~/.gitignore
   "../bin/dotapply": /usr/local/bin/dotapply
   "node_modules/.bin": ~/.node_module_bin
 devtools_config:
