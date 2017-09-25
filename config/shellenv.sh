@@ -6,3 +6,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Source nodebins resolved via yarn
 export PATH="$PATH:$HOME/.node_module_bin"
+
+# Put hub in-place of git
+alias git=hub
