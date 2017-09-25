@@ -4,5 +4,6 @@ links:
   bashrc.sh: ~/.bashrc
   zshrc.sh: ~/.zshrc
   "../bin/dotapply": /usr/local/bin/dotapply
+  "node_modules/.bin": ~/.node_module_bin
 devtools_config:
   default_node: 8

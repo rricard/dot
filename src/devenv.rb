@@ -19,4 +19,24 @@ module DevEnv
       end
     end
   end
+
+  def DevEnv.yarn_install cfg_path, verbose = false
+    if verbose
+      puts "[INFO] Installing node cli tools using yarn"
+    end
+    cmd = <<-EOF
+      export NVM_DIR="$HOME/.nvm";
+      . "/usr/local/opt/nvm/nvm.sh";
+      yarn install;
+    EOF
+    Dir.chdir cfg_path do
+      if not system cmd
+        raise 'Failed to install packages using yarn'
+        exit 1
+      end
+    end
+    if verbose
+      puts "[DONE] Installed node cli tools"
+    end
+  end
 end

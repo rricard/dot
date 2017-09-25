@@ -6,3 +6,4 @@ tap "caskroom/cask"
 
 # Devtools
 brew 'nvm'
+brew 'yarn', args: ['without-node']

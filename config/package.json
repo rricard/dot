@@ -1,0 +1,8 @@
+{
+  "description": "Globally installed node package and tools",
+  "devDependencies": {
+    "create-react-app": "^1.4.0",
+    "nodemon": "^1.12.1",
+    "serve": "^6.1.0"
+  }
+}

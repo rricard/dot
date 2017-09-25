@@ -12,6 +12,7 @@ def dot(options)
   v = options[:verbose]
   Homebrew.ensure_installed v
   Homebrew.bundle CFG_PATH, v
-  Linker.link_all config['links'], CFG_PATH, v
   DevEnv.nvm_default devtools_config['default_node'], v
+  DevEnv.yarn_install CFG_PATH, v
+  Linker.link_all config['links'], CFG_PATH, v
 end
