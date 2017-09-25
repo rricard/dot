@@ -1,4 +1,9 @@
-# Runs the dot application tool
+require 'yaml'
+require_relative './linker'
+
+YAML_CFG_PATH = File.realpath(File.join(File.dirname(__FILE__), '../config/dot.yaml'))
+
 def dot(options)
-  p options
+  config = YAML.load_file YAML_CFG_PATH
+  Linker.link_all config['links'], options[:verbose]
 end
