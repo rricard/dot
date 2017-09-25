@@ -13,10 +13,10 @@ optparser = OptionParser.new do |opts|
   opts.on '-v', '--[no-]verbose', 'Enable verbose output' do |v|
     options[:verbose] = v
   end
-  opts.on '-m', '--message', 'Commit message to add. Will not commit and push if not provided.' do |m|
+  opts.on '-m', '--message [MESSAGE]', 'Commit message to add. Will not commit and push if not provided.' do |m|
     options[:commit_message] = m
   end
-  opts.on '-u', '--upstream', 'Upstream repo to push to. Defaults to origin.' do |m|
+  opts.on '-u', '--upstream [UPSTREAM]', 'Upstream repo to push to. Defaults to origin.' do |m|
     options[:upstream] = m
   end
 end

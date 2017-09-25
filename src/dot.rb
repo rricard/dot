@@ -15,4 +15,10 @@ def dot(options)
   DevEnv.nvm_default devtools_config['default_node'], v
   DevEnv.yarn_install CFG_PATH, v
   Linker.link_all config['links'], CFG_PATH, v
+  unless options[:commit_message].nil?
+    system 'git', 'commit', '-a', '-m', options[:commit_message]
+    puts "[DONE] Commited changes with message: #{options[:commit_message]}" if v
+    system 'git', 'push', options.upstream
+    puts "[DONE] Pushed to upstream: #{options[:upstream]}" if v
+  end
 end
