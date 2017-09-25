@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 require 'optparse'
+require_relative '../src/dot'
 
 options = {
   :verbose => false,
@@ -21,3 +22,5 @@ optparser = OptionParser.new do |opts|
 end
 
 optparser.parse!
+
+dot(options)
