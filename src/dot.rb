@@ -18,7 +18,7 @@ def dot(options)
   unless options[:commit_message].nil?
     system 'git', 'commit', '-a', '-m', options[:commit_message]
     puts "[DONE] Commited changes with message: #{options[:commit_message]}" if v
-    system 'git', 'push', options.upstream
+    system 'git', 'push', options[:upstream]
     puts "[DONE] Pushed to upstream: #{options[:upstream]}" if v
   end
 end
