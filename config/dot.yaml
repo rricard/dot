@@ -1,2 +1,5 @@
 links:
+  shellenv.sh: ~/.shellenv
+  bash_profile.sh: ~/.bash_profile
   bashrc.sh: ~/.bashrc
+  zshrc.sh: ~/.zshrc
