@@ -19,12 +19,14 @@ module Homebrew
   def Homebrew.bundle(cfg_path, verbose = false)
     if verbose
       puts "[INFO] launching an hombrew bundling"
-      Dir.chdir cfg_path do
-        if not system 'brew', 'bundle'
-          raise 'Homebrew bundling failed'
-          exit 1
-        end
+    end
+    Dir.chdir cfg_path do
+      if not system 'brew', 'bundle'
+        raise 'Homebrew bundling failed'
+        exit 1
       end
+    end
+    if verbose
       puts "[DONE] homebrew bundled new software"
     end
   end
