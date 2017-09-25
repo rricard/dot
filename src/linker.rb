@@ -1,10 +1,8 @@
 require 'fileutils'
 
-CFG_PATH = File.realpath(File.join(File.dirname(__FILE__), '../config/'))
-
 module Linker
-  def Linker.link(src, dst, verbose = false)
-    src_path = File.join CFG_PATH, src
+  def Linker.link(src, dst, cfg_path, verbose = false)
+    src_path = File.join cfg_path, src
     dst_path = dst.gsub /~/, ENV['HOME']
     if File.exist? dst_path and not File.lstat(dst_path).symlink?
       if verbose
@@ -26,12 +24,12 @@ module Linker
     end
   end
 
-  def Linker.link_all(links, verbose = false)
+  def Linker.link_all(links, cfg_path, verbose = false)
     if verbose
       puts "[INFO] Ensuring link for #{links.length} configuration files..."
     end
     links.each do |src, dst|
-      Linker.link src, dst, verbose
+      Linker.link src, dst, cfg_path, verbose
     end
     if verbose
       puts "[DONE] #{links.length} configuration files are currently linked..."

@@ -1,0 +1,8 @@
+#!/usr/bin/ruby
+
+# Homebrew global params and taps
+cask_args appdir: "/Applications"
+tap "caskroom/cask"
+
+# Devtools
+brew 'nvm'
