@@ -4,12 +4,12 @@
 
 ## Install
 
-Clone it, run the init script:
+Clone it, run the apply script for the first time:
 
 ```
 git clone https://github.com/rricard/dot.git
 cd dot
-./bin/dot init
+./bin/dot
 ```
 
 ## Make it yours
@@ -25,13 +25,13 @@ git fork
 Once you changed some things in your config, you can apply them:
 
 ```
-dot apply
+dot
 ```
 
 You can automatically apply, commit and push the config by adding a commit message:
 
 ```
-dot apply -m YOUR_COMMIT_MESSAGE -u YOUR_GH_USERNAME
+dot -m YOUR_COMMIT_MESSAGE -u YOUR_GH_USERNAME
 ```
 
 [rr]: http://rricard.me

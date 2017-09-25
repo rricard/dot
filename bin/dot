@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+require 'optparse'
+
+options = {
+  :verbose => false,
+  :commit_message => nil,
+  :upstream => 'origin'
+}
+
+optparser = OptionParser.new do |opts|
+  opts.banner = 'Usage: dot [options]'
+  opts.on '-v', '--[no-]verbose', 'Enable verbose output' do |v|
+    options[:verbose] = v
+  end
+  opts.on '-m', '--message', 'Commit message to add. Will not commit and push if not provided.' do |m|
+    options[:commit_message] = m
+  end
+  opts.on '-u', '--upstream', 'Upstream repo to push to. Defaults to origin.' do |m|
+    options[:upstream] = m
+  end
+end
+
+optparser.parse!
