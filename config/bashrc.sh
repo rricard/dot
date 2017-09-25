@@ -10,4 +10,4 @@ L_MAGENTA="\e[95m"
 RED="\e[31m"
 
 # Custom prompt
-export PS1="\n$BLUE\w$RESET\n${L_MAGENTA}\$❯ $RESET"
+export PS1="\n$BLUE\w$RESET\n${L_MAGENTA}\$ ❯ $RESET"
