@@ -4,3 +4,5 @@ links:
   bashrc.sh: ~/.bashrc
   zshrc.sh: ~/.zshrc
   "../bin/dotapply": /usr/local/bin/dotapply
+devtools_config:
+  default_node: 8
