@@ -3,7 +3,7 @@
   "editor.fontLigatures": true,
   "editor.fontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
 
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "One Dark Pro",
   "editor.minimap.enabled": false,
 
   "editor.tabSize": 2,
