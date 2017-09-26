@@ -11,5 +11,7 @@
 
   "javascript.validate.enable": false,
   "flow.useNPMPackagedFlow": true,
-  "git.enableSmartCommit": true
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false
 }
