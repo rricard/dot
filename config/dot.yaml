@@ -6,9 +6,16 @@ links:
   .gitignore: ~/.gitignore
   vscode-settings.json: ~/Library/Application Support/Code/User/settings.json
   "../bin/dotapply": /usr/local/bin/dotapply
-  "node_modules/.bin": ~/.node_module_bin
 devtools_config:
   default_node: 8
+  global_node_packages:
+    - create-react-app
+    - create-react-native-app
+    - nodemon
+    - pure-prompt
+    - serve
+    - bs-platform
+    - https://github.com/reasonml/reason-cli/archive/beta-v-1.13.7-bin-darwin.tar.gz
   vscode_extensions:
     - zhuangtongfa.material-theme
     - akamud.vscode-theme-onelight

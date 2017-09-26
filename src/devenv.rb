@@ -20,24 +20,18 @@ module DevEnv
     end
   end
 
-  def DevEnv.yarn_install cfg_path, verbose = false
-    if verbose
-      puts "[INFO] Installing node cli tools using yarn"
-    end
+  def DevEnv.yarn_global_install packages, verbose = false
+    puts "[INFO] Installing #{packages.length} node packages globally using yarn" if verbose
     cmd = <<-EOF
       export NVM_DIR="$HOME/.nvm";
       . "/usr/local/opt/nvm/nvm.sh";
-      yarn install;
+      yarn global add "#{packages * '" "'}";
     EOF
-    Dir.chdir cfg_path do
-      if not system cmd
-        raise 'Failed to install packages using yarn'
-        exit 1
-      end
+    if not system cmd
+      raise "Failed to install #{packages.length} packages using yarn"
+      exit 1
     end
-    if verbose
-      puts "[DONE] Installed node cli tools"
-    end
+    puts "[DONE] Installed #{packages.length} node packages globally using yarn" if verbose
   end
 
   def DevEnv.vscode_install extensions, verbose = false
