@@ -45,6 +45,7 @@ cask 'vlc'
 brew 'hub'
 brew 'nvm'
 brew 'yarn', args: ['without-node']
+brew 'python3'
 
 # Other CLI
 brew 'neofetch'

@@ -23,10 +23,12 @@ def dot(options)
   DevEnv.vscode_install devtools_config['vscode_extensions'], v
   Linker.link_all config['links'], CFG_PATH, v
   unless options[:commit_message].nil?
-    puts "[INFO] Saving the new changes to the repository" if v
-    system 'git', 'commit', '-a', '-m', options[:commit_message]
-    puts "[DONE] Commited changes with message: #{options[:commit_message]}" if v
-    system 'git', 'push', options[:upstream]
-    puts "[DONE] Pushed to upstream: #{options[:upstream]}" if v
+    Dir.chdir DOT_PATH do
+      puts "[INFO] Saving the new changes to the repository" if v
+      system 'git', 'commit', '-a', '-m', options[:commit_message]
+      puts "[DONE] Commited changes with message: #{options[:commit_message]}" if v
+      system 'git', 'push', options[:upstream]
+      puts "[DONE] Pushed to upstream: #{options[:upstream]}" if v
+    end
   end
 end
