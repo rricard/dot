@@ -20,6 +20,21 @@ module DevEnv
     end
   end
 
+  def DevEnv.rbenv_default version, verbose = false
+    if not system "ruby -v | grep #{version} || false"
+      puts "[INFO] Setting default ruby version to #{version}" if verbose
+      cmd = <<-EOF
+        rbenv install #{version};
+        rbenv global #{version};
+      EOF
+      if not system cmd
+        raise 'Failed to set the ruby version'
+        exit 1
+      end
+      puts "[DONE] Default ruby version set to #{version}" if verbose
+    end
+  end
+
   def DevEnv.yarn_global_install packages, verbose = false
     puts "[INFO] Installing #{packages.length} node packages globally using yarn" if verbose
     cmd = <<-EOF
