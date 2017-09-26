@@ -62,6 +62,19 @@ module DevEnv
     puts "[DONE] Installed #{packages.length} python packages globally using pip3" if verbose
   end
 
+  def DevEnv.gem_global_install packages, verbose = false
+    puts "[INFO] Installing #{packages.length} ruby packages globally using gem" if verbose
+    cmd = <<-EOF
+      eval "$(rbenv init -)"
+      gem install "#{packages * '" "'}"
+    EOF
+    if not system cmd
+      raise "Failed to install #{packages.length} packages using gem"
+      exit 1
+    end
+    puts "[DONE] Installed #{packages.length} ruby packages globally using gem" if verbose
+  end
+
   def DevEnv.vscode_install extensions, verbose = false
     if verbose
       puts "[INFO] Installing #{extensions.length} VSCode extensions"

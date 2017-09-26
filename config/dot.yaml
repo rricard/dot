@@ -20,6 +20,8 @@ devtools_config:
     - virtualenv
     - jupyter
   default_ruby: 2.4.2
+  global_ruby_packages:
+    - cocoapods
   vscode_extensions:
     - zhuangtongfa.material-theme
     - akamud.vscode-theme-onelight
