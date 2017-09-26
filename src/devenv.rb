@@ -25,6 +25,7 @@ module DevEnv
     cmd = <<-EOF
       export NVM_DIR="$HOME/.nvm";
       . "/usr/local/opt/nvm/nvm.sh";
+      yarn global remove reason-cli || true;
       yarn global add "#{packages * '" "'}";
     EOF
     if not system cmd
