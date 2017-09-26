@@ -3,6 +3,7 @@
   "devDependencies": {
     "create-react-app": "^1.4.0",
     "nodemon": "^1.12.1",
+    "pure-prompt": "^1.5.2",
     "serve": "^6.1.0"
   }
 }

@@ -2,3 +2,18 @@
 
 # Inherits from the all shell env.
 source $HOME/.shellenv
+
+# Load default completions
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+setopt COMPLETE_ALIASES
+
+# Load pure (https://github.com/sindresorhus/pure)
+autoload -U promptinit; promptinit
+prompt pure
+
+# Load up other plugins
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
