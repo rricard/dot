@@ -46,6 +46,9 @@ brew 'hub'
 brew 'nvm'
 brew 'yarn', args: ['without-node']
 
+# Other CLI
+brew 'neofetch'
+
 # ZSH extensions
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
