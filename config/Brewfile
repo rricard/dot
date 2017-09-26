@@ -4,6 +4,7 @@
 cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+tap 'caskroom/fonts'
 
 # MAS apps
 mas 'Keynote', id: 409183694
@@ -49,3 +50,7 @@ brew 'yarn', args: ['without-node']
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
 brew 'zsh-completions'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-roboto'
