@@ -39,4 +39,16 @@ module DevEnv
       puts "[DONE] Installed node cli tools"
     end
   end
+
+  def DevEnv.vscode_install extensions, verbose = false
+    if verbose
+      puts "[INFO] Installing #{extensions.length} VSCode extensions"
+    end
+    for ext in extensions
+      system 'code', '--install-extension', ext
+    end
+    if verbose
+      puts "[DONE] Installed #{extensions.length} VSCode extensions"
+    end
+  end
 end

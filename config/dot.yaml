@@ -9,3 +9,13 @@ links:
   "node_modules/.bin": ~/.node_module_bin
 devtools_config:
   default_node: 8
+  vscode_extensions:
+    - zhuangtongfa.material-theme
+    - akamud.vscode-theme-onelight
+    - EditorConfig.editorconfig
+    - msjsdiag.debugger-for-chrome
+    - flowtype.flow-for-vscode
+    - dbaeumer.vscode-eslint
+    - vsmobile.vscode-react-native
+    - freebroccolo.reasonml
+    - PeterJausovec.vscode-docker
