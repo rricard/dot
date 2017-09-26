@@ -2,6 +2,8 @@
 
 [Robin Ricard][rr]'s _dotfiles_ or user configuration for various CLI things + various macOS/app configuration.
 
+![Example](./other/assets/example.png)
+
 ## Install
 
 Clone it, run the apply script for the first time:
