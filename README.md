@@ -34,5 +34,26 @@ You can automatically apply, commit and push the config by adding a commit messa
 dotapply -m YOUR_COMMIT_MESSAGE -u YOUR_GH_USERNAME
 ```
 
+You can also start an editor on the dot repo before applying anything, just use the -e option:
+
+```
+dotapply -e
+Press ENTER to continue...
+```
+
+Press ENTER to resume the normal dotapply
+
+This is useful if you want to install new stuff fast:
+
+```
+dotapply -e -m "Install a go environment"
+```
+
+Then, you can go to your brewfile and add the following for instance:
+
+```ruby
+brew 'go'
+```
+
 [rr]: http://rricard.me
 [hub]: https://hub.github.com
