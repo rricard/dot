@@ -4,6 +4,7 @@ links:
   bashrc.sh: ~/.bashrc
   zshrc.sh: ~/.zshrc
   .gitignore: ~/.gitignore
+  vscode-settings.json: ~/Library/Application Support/Code/User/settings.json
   "../bin/dotapply": /usr/local/bin/dotapply
   "node_modules/.bin": ~/.node_module_bin
 devtools_config:

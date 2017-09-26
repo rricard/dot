@@ -1,0 +1,14 @@
+{
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+
+  "workbench.colorTheme": "Monokai",
+  "editor.minimap.enabled": false,
+
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  "javascript.validate.enable": false,
+  "flow.useNPMPackagedFlow": true
+}
