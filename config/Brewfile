@@ -46,6 +46,7 @@ brew 'hub'
 brew 'nvm'
 brew 'yarn', args: ['without-node']
 brew 'python3'
+brew 'rbenv'
 
 # Other CLI
 brew 'neofetch'
