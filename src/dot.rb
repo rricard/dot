@@ -20,6 +20,7 @@ def dot(options)
   Homebrew.bundle CFG_PATH, v
   DevEnv.nvm_default devtools_config['default_node'], v
   DevEnv.yarn_global_install devtools_config['global_node_packages'], v
+  DevEnv.pip3_global_install devtools_config['global_python_packages'], v
   DevEnv.vscode_install devtools_config['vscode_extensions'], v
   Linker.link_all config['links'], CFG_PATH, v
   unless options[:commit_message].nil?

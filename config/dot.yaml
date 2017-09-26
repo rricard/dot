@@ -16,6 +16,9 @@ devtools_config:
     - serve
     - bs-platform
     - https://github.com/reasonml/reason-cli/archive/beta-v-1.13.7-bin-darwin.tar.gz
+  global_python_packages:
+    - virtualenv
+    - jupyter
   vscode_extensions:
     - zhuangtongfa.material-theme
     - akamud.vscode-theme-onelight

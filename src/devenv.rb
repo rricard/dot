@@ -35,6 +35,18 @@ module DevEnv
     puts "[DONE] Installed #{packages.length} node packages globally using yarn" if verbose
   end
 
+  def DevEnv.pip3_global_install packages, verbose = false
+    puts "[INFO] Installing #{packages.length} python packages globally using pip3" if verbose
+    cmd = <<-EOF
+      pip3 install "#{packages * '" "'}"
+    EOF
+    if not system cmd
+      raise "Failed to install #{packages.length} packages using pip3"
+      exit 1
+    end
+    puts "[DONE] Installed #{packages.length} python packages globally using pip3" if verbose
+  end
+
   def DevEnv.vscode_install extensions, verbose = false
     if verbose
       puts "[INFO] Installing #{extensions.length} VSCode extensions"
