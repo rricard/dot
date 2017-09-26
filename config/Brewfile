@@ -6,6 +6,7 @@ tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'caskroom/fonts'
 tap 'crisidev/homebrew-chunkwm'
+tap 'koekeishiya/formulae'
 
 # MAS apps
 mas 'Keynote', id: 409183694
@@ -51,6 +52,7 @@ brew 'rbenv'
 # Other brew apps
 brew 'neofetch'
 brew 'chunkwm', restart_service: true
+brew 'skhd', restart_service: true
 
 # ZSH extensions
 brew 'zsh-syntax-highlighting'
