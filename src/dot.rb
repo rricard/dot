@@ -3,10 +3,16 @@ require_relative './linker'
 require_relative './homebrew'
 require_relative './devenv'
 
-CFG_PATH = File.realpath(File.join(File.dirname(__FILE__), '../config/'))
+DOT_PATH = File.realpath(File.join(File.dirname(__FILE__), '..'))
+CFG_PATH = File.join(DOT_PATH, 'config')
 YAML_CFG_PATH = File.join(CFG_PATH, 'dot.yaml')
 
 def dot(options)
+  if options[:edit_first]
+    system 'code', DOT_PATH
+    puts "Press ENTER to continue..."
+    gets
+  end
   config = YAML.load_file YAML_CFG_PATH
   devtools_config = config['devtools_config']
   v = options[:verbose]

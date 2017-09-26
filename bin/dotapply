@@ -5,7 +5,8 @@ require_relative '../src/dot'
 options = {
   :verbose => false,
   :commit_message => nil,
-  :upstream => 'origin'
+  :upstream => 'origin',
+  :edit_first => false
 }
 
 optparser = OptionParser.new do |opts|
@@ -18,6 +19,9 @@ optparser = OptionParser.new do |opts|
   end
   opts.on '-u', '--upstream [UPSTREAM]', 'Upstream repo to push to. Defaults to origin.' do |m|
     options[:upstream] = m
+  end
+  opts.on '-e', '--edit', 'Starts an editor on the dot repo and wait for continuation' do |e|
+    options[:edit_first] = e
   end
 end
 
