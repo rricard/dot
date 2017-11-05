@@ -17,6 +17,7 @@ mas 'Xcode', id: 497799835
 
 # Cask Applications (preferred)
 cask '1password'
+cask 'aerial'
 cask 'google-backup-and-sync'
 cask 'calibre'
 cask 'citrix-receiver'
