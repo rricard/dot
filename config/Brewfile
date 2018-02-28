@@ -37,6 +37,7 @@ cask 'kitematic'
 cask 'minikube'
 cask 'sketch'
 cask 'slack'
+cask 'spectacle'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'tower'
@@ -53,8 +54,6 @@ brew 'rbenv'
 
 # Other brew apps
 brew 'neofetch'
-brew 'chunkwm', restart_service: true
-brew 'skhd', restart_service: true
 
 # ZSH extensions
 brew 'zsh-syntax-highlighting'
