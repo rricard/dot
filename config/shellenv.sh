@@ -2,7 +2,7 @@
 
 # Source NVM
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+source /usr/local/opt/nvm/nvm.sh
 
 # Shim rbenv
 eval "$(rbenv init -)"
