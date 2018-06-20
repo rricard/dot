@@ -25,12 +25,9 @@ devtools_config:
   global_ruby_packages:
     - cocoapods
   vscode_extensions:
-    - zhuangtongfa.material-theme
-    - akamud.vscode-theme-onelight
+    - wesbos.theme-cobalt2
     - EditorConfig.editorconfig
     - msjsdiag.debugger-for-chrome
     - flowtype.flow-for-vscode
     - dbaeumer.vscode-eslint
-    - vsmobile.vscode-react-native
-    - freebroccolo.reasonml
-    - PeterJausovec.vscode-docker
+    - esbenp.prettier-vscode

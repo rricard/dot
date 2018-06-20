@@ -1,20 +1,22 @@
 {
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
-
-  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontFamily":
+    "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
-
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
 
-  "javascript.validate.enable": false,
-  "flow.useNPMPackagedFlow": true,
+  "workbench.colorTheme": "Cobalt2",
 
-  "reason.formatOnSave": true,
+  "explorer.confirmDelete": false,
+
+  "terminal.integrated.fontSize": 15,
 
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+
+  "javascript.validate.enable": false,
+  "flow.useNPMPackagedFlow": true
 }
