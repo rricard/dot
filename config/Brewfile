@@ -5,45 +5,16 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'caskroom/fonts'
-tap 'crisidev/homebrew-chunkwm'
 tap 'koekeishiya/formulae'
 
-# MAS apps
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Spark', id: 1176895641
-mas 'Xcode', id: 497799835
-
 # Cask Applications (preferred)
-cask '1password'
-cask 'aerial'
-cask 'google-backup-and-sync'
-cask 'calibre'
-cask 'citrix-receiver'
-cask 'discord'
-cask 'docker'
-cask 'dropbox'
-cask 'expo-xde'
-cask 'firefoxdeveloperedition'
-cask 'gfxcardstatus'
-cask 'google-chrome-dev'
-cask 'google-cloud-sdk'
-cask 'hex-fiend'
-cask 'iina'
-cask 'insomnia'
 cask 'iterm2'
-cask 'kitematic'
-cask 'minikube'
 cask 'sketch'
-cask 'slack'
 cask 'spectacle'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'tower'
 cask 'visual-studio-code'
-cask 'virtualbox'
-cask 'vlc'
 
 # Devtools
 brew 'hub'
@@ -51,9 +22,6 @@ brew 'nvm'
 brew 'yarn', args: ['without-node']
 brew 'python3'
 brew 'rbenv'
-
-# Other brew apps
-brew 'neofetch'
 
 # ZSH extensions
 brew 'zsh-syntax-highlighting'
