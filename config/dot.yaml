@@ -12,6 +12,7 @@ devtools_config:
   default_node: 10
   global_node_packages:
     - create-react-app
+    - pure-prompt
   global_python_packages:
     - virtualenv
     - jupyter
