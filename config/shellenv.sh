@@ -7,6 +7,9 @@ source /usr/local/opt/nvm/nvm.sh
 # Shim rbenv
 eval "$(rbenv init -)"
 
+# Setup rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Aliases
 # > git
 alias git=hub

@@ -51,6 +51,7 @@ brew 'nvm'
 brew 'yarn', args: ['without-node']
 brew 'python3'
 brew 'rbenv'
+brew 'rustup'
 
 # Other brew apps
 brew 'neofetch'
