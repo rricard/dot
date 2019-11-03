@@ -23,3 +23,6 @@ alias "gs"="git checkout"
 # Editors
 export REACT_EDITOR="code"
 export EDITOR="code -w"
+
+# cdpath
+export CDPATH="$CDPATH:.:$HOME/Developer/~projects"

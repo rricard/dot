@@ -4,10 +4,9 @@
   "editor.fontFamily":
     "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
   "editor.insertSpaces": true,
 
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Ayu Light",
 
   "explorer.confirmDelete": false,
 
@@ -18,5 +17,9 @@
   "git.autofetch": true,
 
   "javascript.validate.enable": false,
-  "flow.useNPMPackagedFlow": true
+  "flow.useNPMPackagedFlow": true,
+  "breadcrumbs.enabled": true,
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1
 }
